@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alfin Mathew — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="noise"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ════ NAV ════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">AM<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="#contact" class="nav-cta">Hire Me</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" class="mob-link">About</a>
+      <a href="#skills" class="mob-link">Skills</a>
+      <a href="#experience" class="mob-link">Experience</a>
+      <a href="#projects" class="mob-link">Projects</a>
+      <a href="#education" class="mob-link">Education</a>
+      <a href="#contact" class="mob-link">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ════ HERO ════ -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-name">
+          <span class="line-reveal">Alfin</span>
+          <span class="line-reveal delay-1">Mathew<span class="name-accent">.</span></span>
+        </h1>
+        <p class="hero-title">BCA Student &amp; <span class="highlight">Software Developer</span></p>
+        <p class="hero-sub">
+          Mobile-first developer passionate about building real, impactful applications —
+          from Flutter-powered apps to AI-driven platforms. Based in Bengaluru, India.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="Alfin Mathew Adukuzhiyil.pdf" download class="btn-ghost">
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">1</span>
+            <span class="stat-label">Internship</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Social icons above profile -->
+        <div class="profile-socials">
+          <a href="https://github.com/AlfinMathew08" target="_blank" class="profile-social-link" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/alfin-mathew-adukuzhiyil-25587929b" target="_blank" class="profile-social-link" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+        <div class="profile-frame">
+          <div class="profile-ring ring-1"></div>
+          <div class="profile-ring ring-2"></div>
+          <div class="profile-img-wrap">
+            <img src="images/Alfindp.jpg" alt="Alfin Mathew" id="profileImg"
+                 onerror="this.style.display='none'; document.getElementById('profileFallback').style.display='flex'"/>
+            <div class="profile-fallback" id="profileFallback">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+          <div class="profile-tag">
+            <i class="fa-solid fa-mobile-screen"></i> Flutter Dev
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ════ ABOUT ════ -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text-box box">
+          <p>Hey — I'm <strong>Alfin Mathew</strong>, a BCA student at Jain Deemed to be University, Bengaluru, with a deep passion for building mobile and web applications that solve real problems. I specialise in Flutter and Dart, and I love turning an idea into a polished, functional product.</p>
+          <p>I've gained hands-on industry experience through my IT internship at Multiplex International LLC in Dubai, where I built a live mobile application, worked on enterprise networking, and contributed to real corporate IT operations.</p>
+          <p>I'm always exploring — whether it's AI integration, cloud services, iOS development with Swift, or sharpening my backend skills. Every project teaches me something new, and I bring that curiosity into everything I build.</p>
+          <div class="about-details">
+            <div class="detail-item"><i class="fa-solid fa-location-dot"></i><span>Dubai, United Arab Emirates</span></div>
+            <div class="detail-item"><i class="fa-solid fa-location-dot"></i><span>Bengaluru, Karnataka, India</span></div>
+            <div class="detail-item"><i class="fa-solid fa-graduation-cap"></i><span>BCA — Jain Deemed to be University (Expected June 2026)</span></div>
+            <div class="detail-item"><i class="fa-solid fa-envelope"></i><span>alfinadukuzhiyilmathew@gmail.com</span></div>
+            <div class="detail-item"><i class="fa-solid fa-phone"></i><span>🇦🇪 +971 5277 80837</span></div>
+            <div class="detail-item"><i class="fa-solid fa-phone"></i><span>🇮🇳 +91 70345 77931</span></div>
+          </div>
+        </div>
+        <div class="about-right">
+          <div class="about-card box">
+            <div class="about-card-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+            <h3>Mobile Developer</h3>
+            <p>Builds cross-platform apps with Flutter &amp; Dart — clean UI, smooth UX, production-ready code.</p>
+          </div>
+          <div class="about-card box">
+            <div class="about-card-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>AI Enthusiast</h3>
+            <p>Integrating intelligent features — from AI eligibility checks to real-time donor matching systems.</p>
+          </div>
+          <div class="about-card box">
+            <div class="about-card-icon"><i class="fa-solid fa-cloud"></i></div>
+            <h3>Cloud Aware</h3>
+            <p>Experienced with Firebase and AWS services for scalable, real-time application backends.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ SKILLS ════ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Skills</span>
+        <h2 class="section-title">Tech Stack</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skills-category box">
+          <h3><i class="fa-solid fa-mobile-screen"></i> Mobile & Frontend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">Dart</span>
+            <span class="skill-tag">Swift (iOS)</span>
+            <span class="skill-tag">XML</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+        <div class="skills-category box">
+          <h3><i class="fa-solid fa-code"></i> Languages & Backend</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Core Java</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+        <div class="skills-category box">
+          <h3><i class="fa-solid fa-cloud"></i> Cloud & Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Microsoft Office Suite</span>
+            <span class="skill-tag">Firebase</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">CI/CD Pipelines</span>
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">Cisco Webex</span>
+          </div>
+        </div>
+        <div class="skills-category box">
+          <h3><i class="fa-solid fa-lightbulb"></i> Concepts & Practices</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">Algorithms</span>
+            <span class="skill-tag">DBMS</span>
+            <span class="skill-tag">Computer Networks</span>
+            <span class="skill-tag">Clean Code</span>
+            <span class="skill-tag">UI/UX Design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ EXPERIENCE ════ -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Experience</span>
+        <h2 class="section-title">Where I've Worked</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item box">
+          <div class="timeline-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-line"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">IT Intern</h3>
+                <p class="timeline-company">
+                  <i class="fa-solid fa-building"></i>
+                  Multiplex International LLC — Dubai, UAE
+                </p>
+              </div>
+              <span class="timeline-date">June 2025 – August 2025</span>
+            </div>
+            <ul class="timeline-duties">
+              <li><i class="fa-solid fa-chevron-right"></i>Worked on multiple real-world IT projects supporting internal business operations across the company.</li>
+              <li><i class="fa-solid fa-chevron-right"></i>Designed and developed the full UI for a Petty Cash Tracker mobile application for company employees using Flutter and Dart.</li>
+              <li><i class="fa-solid fa-chevron-right"></i>Gained hands-on experience in mobile application development, UI/UX design, and debugging in a live corporate environment.</li>
+              <li><i class="fa-solid fa-chevron-right"></i>Acquired practical exposure to networking concepts including VLANs and their use in enterprise IT infrastructure.</li>
+              <li><i class="fa-solid fa-chevron-right"></i>Assisted with IT support, system troubleshooting, and technical documentation across departments.</li>
+              <li><i class="fa-solid fa-chevron-right"></i>Deepened understanding of how IT solutions are applied in a corporate setting to improve operational efficiency.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Microsoft Office Suite</span><span>Flutter</span><span>Dart</span><span>UI/UX</span><span>Networking</span><span>VLANs</span><span>IT Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ PROJECTS ════ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Projects</span>
+        <h2 class="section-title">What I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card box featured">
+          <div class="featured-badge">Featured</div>
+          <div class="project-number">01</div>
+          <div class="project-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>DonViva — AI Blood Donation App</h3>
+              <div class="project-links">
+                <a href="https://github.com/AlfinMathew08/Donviva.git" target="_blank" title="GitHub" class="proj-link"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <p>An AI-powered cross-platform blood donation app enabling real-time donor-recipient matching. Features instant SOS alerts to nearby compatible donors via live location, AI-based donor eligibility checks, and a secure Firebase backend with real-time data synchronisation.</p>
+            <div class="project-tags">
+              <span>Flutter</span><span>Dart</span><span>Python</span><span>Firebase</span><span>AI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card box">
+          <div class="project-number">02</div>
+          <div class="project-icon"><i class="fa-solid fa-wallet"></i></div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>Petty Cash Tracker</h3>
+              <div class="project-links">
+                <a href="https://github.com/AlfinMathew08/Petty-cash-Tracker.git" target="_blank" title="GitHub" class="proj-link"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <p>A corporate expense management app built with Flutter and Dart for Multiplex International LLC. Employees log expenses, upload bills and state purposes — while managers review, verify, and approve or reject requests. Ensures full transparency and accountability of petty cash funds.</p>
+            <div class="project-tags">
+              <span>Flutter</span><span>Dart</span><span>UI/UX</span><span>Mobile</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card box">
+          <div class="project-number">03</div>
+          <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3>FinTech Website</h3>
+              <div class="project-links">
+                <a href="https://github.com/AlfinMathew08/Fin-Coach.git" target="_blank" title="GitHub" class="proj-link"><i class="fa-brands fa-github"></i></a>
+                <a href="https://fin-coach.github.io/FinCoach/" target="_blank" title="Live Demo" class="proj-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <p>A professional financial technology landing page built as part of an online course. Features modern UI components — hero sections, service cards, pricing tiers, and a fully responsive layout crafted with clean HTML and CSS.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ EDUCATION ════ -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 / Education</span>
+        <h2 class="section-title">Academic Background</h2>
+      </div>
+      <div class="edu-card box">
+        <div class="edu-left">
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        </div>
+        <div class="edu-content">
+          <div class="edu-header">
+            <div>
+              <h3>Bachelor of Computer Applications (BCA) (MACT)</h3>
+              <p class="edu-school"><i class="fa-solid fa-building-columns"></i> Jain Deemed to be University — Bengaluru, Jayanagar</p>
+            </div>
+            <span class="timeline-date">Expected June 2026</span>
+          </div>
+          <p class="edu-desc">Broad computing curriculum with concentrations across:</p>
+          <div class="edu-tags">
+            <span>Mobile App Dev (Dart, XML)</span>
+            <span>iOS Development (Swift)</span>
+            <span>Cloud Technology</span>
+            <span>AWS Services</span>
+            <span>Database Management</span>
+            <span>Computer Networks (Cisco)</span>
+            <span>Operating Systems (Linux)</span>
+            <span>Python Programming</span>
+            <span>C++</span>
+            <span>OOP with Java</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ CONTACT ════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 / Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-intro box">
+            <h3>Open to Opportunities</h3>
+            <p>Whether it's a full-time role, internship, freelance project, or just a conversation about tech — my inbox is always open.</p>
+            <a href="mailto:alfinadukuzhiyilmathew@gmail.com" class="btn-primary email-btn">
+              <i class="fa-solid fa-paper-plane"></i> Send an Email
+            </a>
+            <a href="Alfin Mathew Adukuzhiyil.pdf" download class="btn-ghost download-btn">
+              <i class="fa-solid fa-download"></i> Download My CV
+            </a>
+          </div>
+          <div class="contact-socials box">
+            <h3>Find Me Online</h3>
+            <div class="social-links">
+              <a href="https://github.com/AlfinMathew08" target="_blank" class="social-link">
+                <i class="fa-brands fa-github"></i><span>GitHub</span>
+                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/alfin-mathew-adukuzhiyil-25587929b" target="_blank" class="social-link">
+                <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+              </a>
+              <a href="https://wa.me/917034577931" target="_blank" class="social-link">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>🇮🇳 +91 70345 77931</span>
+                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+              </a>
+              <a href="tel:+971527780837" class="social-link">
+                <i class="fa-solid fa-phone"></i>
+                <span>🇦🇪 +971 5277 80837</span>
+                <i class="fa-solid fa-arrow-right arrow-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap box">
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" placeholder="" />
+              </div>
+              <div class="form-group">
+                <label for="femail">Email Address</label>
+                <input type="email" id="femail" placeholder="" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <input type="text" id="fsubject" placeholder="Job opportunity / Project inquiry" />
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" rows="5" placeholder="Tell me about the opportunity…"></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-btn">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════ FOOTER ════ -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-logo">AM<span class="dot">.</span></span>
+      <p>© 2025 Alfin Mathew. Built with passion &amp; precision.</p>
+      <a href="#hero" class="back-top" title="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    const follower = document.getElementById('cursorFollower');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top  = e.clientY + 'px';
+      setTimeout(() => {
+        follower.style.left = e.clientX + 'px';
+        follower.style.top  = e.clientY + 'px';
+      }, 80);
+    });
+    document.querySelectorAll('a, button, .project-card, .about-card').forEach(el => {
+      el.addEventListener('mouseenter', () => { cursor.classList.add('cursor-hover'); follower.classList.add('cursor-hover'); });
+      el.addEventListener('mouseleave', () => { cursor.classList.remove('cursor-hover'); follower.classList.remove('cursor-hover'); });
+    });
+
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 60); });
+
+    const ham = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    ham.addEventListener('click', () => { ham.classList.toggle('open'); mobileMenu.classList.toggle('open'); });
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => { ham.classList.remove('open'); mobileMenu.classList.remove('open'); });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.box, .timeline-item, .project-card, .section-header, .edu-card').forEach(el => {
+      el.classList.add('fade-up');
+      observer.observe(el);
+    });
+
+    const sections = document.querySelectorAll('section[id]');
+    const navAnchors = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+      navAnchors.forEach(a => {
+        a.classList.remove('active');
+        if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+      });
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.innerHTML = '<i class="fa-solid fa-check"></i> Sent!';
+      setTimeout(() => { btn.innerHTML = 'Send Message <i class="fa-solid fa-paper-plane"></i>'; }, 3000);
+    });
+  </script>
+</body>
+</html>
